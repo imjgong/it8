@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT8.Co</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+ 
+  .logo {
+    text-align: center;
+    padding: 20px 0;
+  }
+ 
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .menu-item {
+    margin: 0 10px;
+  }
+ 
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .link-list li {
+    width: 200px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+  }
+ 
+  .link-list li a {
+    color: #333;
+    text-decoration: none;
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .link-list li {
+      width: 100%;
+    }
+  }
+</style>
+ 
+ 
+</head>
+<body>
+  <div class="logo">
+    <img src="pic/logo_search.gif"  width="10%" height="10%" alt="Welcome">
+    <!-- Logo图片或文字 -->
+  </div>
+ 
+  <!-- 导航菜单 -->
+  <ul class="nav-menu menu">
+    <li class="menu-item">
+      <a href="javascript:;" onClick="showCategory('category1')">搜索导航</a>
+    </li>
+    <li class="menu-item">
+      <a href="javascript:;" onClick="showCategory('category2')">格式转换</a>
+    </li>
+    <li class="menu-item">
+      <a href="javascript:;" onClick="showCategory('category3')">AI图片素材</a>
+    </li>
+  </ul>
+ 
+  <!-- 网址导航内容区域 -->
+  <div id="categoryContent">
+    <ul class="link-list active" id="category1Content">
+      <li><a href="https://zh.wikihow.com/">wikiHow</a></li>
+      <li><a href="https://search.chongbuluo.com/">虫部落</a></li>
+      <li><a href="https://aur.one/">一个开始</a></li>
+      <li><a href="https://www.dbbqb.com/">逗比拯救世界</a></li>
+      <li><a href="https://jikipedia.com/">小鸡词典</a></li>
+      <li><a href="https://music.ifkdy.com">疯狂音乐搜索</a></li>
+      <li><a href="https://pan.qianfan.app">千帆搜索</a></li>
+      <li><a href="https://yandex.com/images">以图搜图</a></li>
+      <li><a href="https://owlook.com.cn">网络小说搜索</a></li>
+      <li><a href="https://www.alipansou.com/">猫狸盘搜 </a></li>
+      <li><a href="https://www.xuebapan.com/">学霸盘</a></li>
+      <li><a href="https://www.panothers.com">盘他</a></li>
+      <li><a href="https://www.chaonengsou.com/">超能搜</a></li>
+      <li><a href="https://www.lzpanx.com/">懒盘搜索</a></li>
+      <li><a href="https://www.ttyunsou.com/">探索兔</a></li>
+      <li><a href="https://www.gobaidugle.com/">谷百度歌</a></li>
+      <li><a href="https://www.ipaddress.com/">IPAddress</a></li>
+      <li><a href="https://www.google.com/imghp">谷歌识图</a></li>
+      <li><a href="https://pic.sogou.com">搜狗识图</a></li>
+      <li><a href="https://cn.bing.com/visualsearch">必应可视</a></li>
+      <li><a href="https://trace.moe">tracemoe</a></li>
+    </ul>
+    <ul class="link-list" id="category2Content">
+      <li><a href="https://www.hipdf.cn/all-tools">HiPDF-PDF转换</a></li>
+      <li><a href="https://tools.pdf24.org/zh/">PDF24 Tools</a></li>
+      <li><a href="https://www.remove.bg/zh">removebg一键抠图</a></li>
+      <li><a href="https://webrename.cn/">文件批量重命名</a></li>
+      <li><a href="https://tool.liumingye.cn/music/">MP3下载</a></li>
+      <li><a href="https://singlelogin.site/">ZLibrary电子书下载</a></li>
+      <li><a href="https://www.openpeeps.com/">人物插画下载</a></li>
+      <li><a href="https://speedpdf.cn/zh-cn/">文档格式转换</a></li>
+      <li><a href="https://www.iloveimg.com/zh-cn/">在线图片压缩转换</a></li>
+      <li><a href="https://jinaconvert.com/cn/index.php">在线图片格式转换</a></li>
+      <li><a href="http://www.akuziti.com/">艺术字体转换</a></li>
+      <li><a href="https://www.aies.cn/">在线繁体字转换</a></li>
+      <li><a href="https://www.txttool.com/">txttool文本处理</a></li>
+      <li><a href="https://yhjf.cc/">阅后即焚<a></li>
+      <li><a href="https://www.addog.vip/">广告人的网址导航<a></li> 
+    </ul>
+    <ul class="link-list" id="category3Content">
+      <li><a href="https://ai.chiyingapp.com/">AI创作家</a></li>
+      <li><a href="https://ai-bot.cn/">AI工具导航</a></li>
+      <li><a href="https://yiyan.baidu.com/">文心一言</a></li>
+      <li><a href="https://tongyi.aliyun.com/">通义大模型</a></li>
+      <li><a href="https://openai.com/index/chatgpt/">OpenAI</a></li>
+      <li><a href="https://www.aippt.cn/" title="AI一键生成PPT">AiPPT</a></li>
+      <li><a href="https://oneminutepark.tv">一分钟公园</a></li>
+      <li><a href="https://chattts.com/zh">AI文本转语音</a></li>
+      <li><a href="https://www.phototoanime.com">转换动漫风格</a></li>
+      <li><a href="https://www.sitapix.com/">西田图像-公益性</a></li>
+      <li><a href="https://pixabay.com/">pixabay无版权图库</a></li>
+      <li><a href="https://www.pexels.com/zh-tw/">pexels图片素材</a></li>
+      <li><a href="https://www.airpano.org.cn/">Airpano-足不出户看世界</a></li>
+      <li><a href="https://pf.bigpixel.cn/zh-CN.html">千亿像素看中国</a></li>
+      <li><a href="https://kimi.moonshot.cn/">Kimi智能助手</a></li>
+      
+
+    </ul>
+  </div>
+ 
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    // 隐藏分类2和分类3的内容
+    var category2Content = document.getElementById('category2Content');
+    var category3Content = document.getElementById('category3Content');
+ 
+    // 设置初始显示方式为flex
+    category2Content.style.display = 'flex';
+    category3Content.style.display = 'flex';
+ 
+    // 默认显示分类1的内容
+    showCategory('category1');
+  });
+ 
+  // 显示特定分类的网址导航内容
+  function showCategory(category) {
+    var categoryContent = document.getElementById('categoryContent');
+    var category1Content = document.getElementById('category1Content');
+    var category2Content = document.getElementById('category2Content');
+    var category3Content = document.getElementById('category3Content');
+ 
+    // 隐藏所有分类的内容
+    category1Content.style.display = 'none';
+    category2Content.style.display = 'none';
+    category3Content.style.display = 'none';
+ 
+    // 根据选择显示对应分类的内容
+    if (category === 'category1') {
+      category1Content.style.display = 'flex';
+    } else if (category === 'category2') {
+      category2Content.style.display = 'flex';
+    } else if (category === 'category3') {
+      category3Content.style.display = 'flex';
+    }
+  }
+</script>
+ 
+ 
+</body>
+</html>
